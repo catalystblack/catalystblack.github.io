@@ -3,7 +3,6 @@
 
 import os
 import csv
-import math
 import secrets
 from PIL import Image
 
@@ -13,9 +12,8 @@ for image in os.listdir('./img/pre'):
 
     while True:
         hash = secrets.token_hex(16)
-        if not os.path.exists('./img/post/' + hash + '.png'):
-            if not os.path.exists('./img/post/' + hash + '.jpg'):
-                break
+        if not os.path.exists('./img/post/' + hash + '.jpg'):
+            break
 
     # open image
 
