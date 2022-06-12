@@ -3,6 +3,7 @@
 
 import os
 import csv
+import pandas
 import secrets
 from PIL import Image
 
@@ -28,11 +29,17 @@ for image in os.listdir('./img/pre'):
     print('1. Slayer\n2. Hydra\n3. Colosseum\n4. Eventide\n' +
           '5. Capture the Flag\n6. Flag Hunters\n7. Core Rush')
     while mode < 1 or mode > 7:
+        raw = input()
+        if raw == 'del':
+            break
         try:
-            mode = int(input())
+            mode = int(raw)
         except ValueError:
             pass
-    if mode == 2:
+    if raw == 'del':
+        os.remove('./img/pre/' + image)
+        continue
+    elif mode == 2:
         row.append('Hydra')
         row.append(input('Cores Returned: '))
         row.append(input('Paragon Kills: '))
@@ -70,3 +77,8 @@ for image in os.listdir('./img/pre'):
     # save image
     img.save('./img/post/' + hash + '.jpg', optimize=True, quality=80)
     os.remove('./img/pre/' + image)
+
+# sort data
+data = pandas.read_csv(r'./csv/data.csv')
+data.sort_values('hash', axis=0, inplace=True)
+data.to_csv(r'./csv/data.csv', index=False)
