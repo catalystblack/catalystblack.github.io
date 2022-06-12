@@ -11,6 +11,7 @@
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600;700&display=swap'>
     <link rel='stylesheet' href='css/style.css' class='css'>
+    <script src="js/rankings.js"></script>
 </head>
 
 <body>
@@ -20,42 +21,46 @@
                 <img class='logo' src='img/logo-192x192.png'>
             </a>
             <ul class='navigation-list'>
-                <a href='index.html'>
-                    <li class='navigation-link'>RANKINGS</li>
-                </a>
-                <a href='about.html'>
-                    <li class='navigation-link'>ABOUT</li>
-                </a>
-                <a href='privacy.html'>
-                    <li class='navigation-link'>PRIVACY</li>
-                </a>
+                <li class='navigation-link'>
+                    <a href='index.html'>RANKINGS</a>
+                </li>
+                <li class='navigation-link'>
+                    <a href='about.html'>ABOUT</a>
+                </li>
+                <li class='navigation-link'>
+                    <a href='privacy.html'>PRIVACY</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Unofficial Catalyst Black Rankings</h1>
-        <section class='gamemode-section'>
-            <h2 class='gamemode-title'>Eventide</h2>
+        <h1>Catalyst Black Rankings</h1>
+        <section class='gamemode-section' id='eventide'>
+            <a href='#eventide'>
+                <h2 class='gamemode-title'>Eventide</h2>
+            </a>
             <section class='gamemode-flexbox'>
-                <section class='statistic-section'>
-                    <h3 class='statistic-title'>Score</h3>
-                    <ul class='statistic-list' id='eventide-score'></ul>
+                <section class='statistic-section' id='eventide-score'>
+                    <a href='#eventide-score'>
+                        <h3 class='statistic-title'>Score</h3>
+                    </a>
+                    <ul class='statistic-list' id='eventide-score-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='eventide-kills'></ul>
+                    <ul class='statistic-list' id='eventide-kills-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Assists</h3>
-                    <ul class='statistic-list' id='eventide-assists'></ul>
+                    <ul class='statistic-list' id='eventide-assists-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kill Streak</h3>
-                    <ul class='statistic-list' id='eventide-ks'></ul>
+                    <ul class='statistic-list' id='eventide-ks-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score per Minute</h3>
-                    <ul class='statistic-list' id='eventide-spm'></ul>
+                    <ul class='statistic-list' id='eventide-spm-list'></ul>
                 </section>
             </section>
         </section>
@@ -64,23 +69,23 @@
             <section class='gamemode-flexbox'>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score</h3>
-                    <ul class='statistic-list' id='slayer-score'></ul>
+                    <ul class='statistic-list' id='slayer-score-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='slayer-kills'></ul>
+                    <ul class='statistic-list' id='slayer-kills-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Assists</h3>
-                    <ul class='statistic-list' id='slayer-assists'></ul>
+                    <ul class='statistic-list' id='slayer-assists-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kill Streak</h3>
-                    <ul class='statistic-list' id='slayer-ks'></ul>
+                    <ul class='statistic-list' id='slayer-ks-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score per Minute</h3>
-                    <ul class='statistic-list' id='slayer-spm'></ul>
+                    <ul class='statistic-list' id='slayer-spm-list'></ul>
                 </section>
             </section>
         </section>
@@ -89,23 +94,23 @@
             <section class='gamemode-flexbox'>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score</h3>
-                    <ul class='statistic-list' id='ctf-score'></ul>
+                    <ul class='statistic-list' id='ctf-score-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='ctf-kills'></ul>
+                    <ul class='statistic-list' id='ctf-kills-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Assists</h3>
-                    <ul class='statistic-list' id='ctf-assists'></ul>
+                    <ul class='statistic-list' id='ctf-assists-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kill Streak</h3>
-                    <ul class='statistic-list' id='ctf-ks'></ul>
+                    <ul class='statistic-list' id='ctf-ks-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score per Minute</h3>
-                    <ul class='statistic-list' id='ctf-spm'></ul>
+                    <ul class='statistic-list' id='ctf-spm-list'></ul>
                 </section>
             </section>
         </section>
@@ -114,23 +119,23 @@
             <section class='gamemode-flexbox'>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score</h3>
-                    <ul class='statistic-list' id='fh-score'></ul>
+                    <ul class='statistic-list' id='fh-score-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='fh-kills'></ul>
+                    <ul class='statistic-list' id='fh-kills-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Assists</h3>
-                    <ul class='statistic-list' id='fh-assists'></ul>
+                    <ul class='statistic-list' id='fh-assists-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kill Streak</h3>
-                    <ul class='statistic-list' id='fh-ks'></ul>
+                    <ul class='statistic-list' id='fh-ks-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score per Minute</h3>
-                    <ul class='statistic-list' id='fh-spm'></ul>
+                    <ul class='statistic-list' id='fh-spm-list'></ul>
                 </section>
             </section>
         </section>
@@ -139,23 +144,23 @@
             <section class='gamemode-flexbox'>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score</h3>
-                    <ul class='statistic-list' id='cr-score'></ul>
+                    <ul class='statistic-list' id='cr-score-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='cr-kills'></ul>
+                    <ul class='statistic-list' id='cr-kills-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Assists</h3>
-                    <ul class='statistic-list' id='cr-assists'></ul>
+                    <ul class='statistic-list' id='cr-assists-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kill Streak</h3>
-                    <ul class='statistic-list' id='cr-ks'></ul>
+                    <ul class='statistic-list' id='cr-ks-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Score per Minute</h3>
-                    <ul class='statistic-list' id='cr-spm'></ul>
+                    <ul class='statistic-list' id='cr-spm-list'></ul>
                 </section>
             </section>
         </section>
@@ -164,27 +169,27 @@
             <section class='gamemode-flexbox'>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Cores Returned</h3>
-                    <ul class='statistic-list' id='hydra-cr'></ul>
+                    <ul class='statistic-list' id='hydra-cr-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Paragon Kills</h3>
-                    <ul class='statistic-list' id='hydra-pk'></ul>
+                    <ul class='statistic-list' id='hydra-pk-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Damage to Boss</h3>
-                    <ul class='statistic-list' id='hydra-dtb'></ul>
+                    <ul class='statistic-list' id='hydra-dtb-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='hydra-kills'></ul>
+                    <ul class='statistic-list' id='hydra-kills-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Assists</h3>
-                    <ul class='statistic-list' id='hydra-assists'></ul>
+                    <ul class='statistic-list' id='hydra-assists-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Damage to Players</h3>
-                    <ul class='statistic-list' id='hydra-dtp'></ul>
+                    <ul class='statistic-list' id='hydra-dtp-list'></ul>
                 </section>
             </section>
         </section>
@@ -193,24 +198,26 @@
             <section class='gamemode-flexbox'>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Damage Dealt</h3>
-                    <ul class='statistic-list' id='colosseum-dd'></ul>
+                    <ul class='statistic-list' id='colosseum-dd-list'></ul>
                 </section>
                 <section class='statistic-section'>
                     <h3 class='statistic-title'>Kills</h3>
-                    <ul class='statistic-list' id='colosseum-kills'></ul>
+                    <ul class='statistic-list' id='colosseum-kills-list'></ul>
                 </section>
             </section>
         </section>
     </main>
     <footer>
         <ul class='navigation-list'>
-            <a href='about.html'>
-                <li class='navigation-link'>ABOUT</li>
-            </a>
-            <a href='privacy.html'>
-                <li class='navigation-link'>PRIVACY</li>
-            </a>
-            <li class='navigation-link'>&copy2021 Akash Shendure</li>
+            <li class='navigation-link'>
+                <a href='about.html'>ABOUT</a>
+            </li>
+            <li class='navigation-link'>
+                <a href='privacy.html'>PRIVACY</a>
+            </li>
+            <li class='navigation-link'>
+                <p>&copy2021 TT_Lucifer#3015</p>
+            </li>
         </ul>
     </footer>
 </body>
