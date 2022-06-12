@@ -9,14 +9,12 @@ from PIL import Image
 for image in os.listdir('./img/pre'):
 
     # generate hash
-
     while True:
         hash = secrets.token_hex(16)
         if not os.path.exists('./img/post/' + hash + '.jpg'):
             break
 
     # open image
-
     img = Image.open('./img/pre/' + image)
     img = img.convert('RGB')
     ratio = img.size[1] / img.size[0]
@@ -25,7 +23,6 @@ for image in os.listdir('./img/pre'):
     img.show()
 
     # compile data
-
     row = [input('\nName: '), hash]
     mode = 0
     print('1. Slayer\n2. Hydra\n3. Colosseum\n4. Eventide\n' +
@@ -65,13 +62,11 @@ for image in os.listdir('./img/pre'):
         row.append(input('Score per Minute: '))
 
     # append data
-
     data = open('./csv/data.csv', mode='a', newline='')
     write = csv.writer(data)
     write.writerow(row)
     data.close()
 
     # save image
-
     img.save('./img/post/' + hash + '.jpg', optimize=True, quality=80)
     os.remove('./img/pre/' + image)

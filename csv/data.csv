@@ -1,4 +1,4 @@
-Name,Hash,Game
+name,hash,game,a,b,c,d,e,f
 Drei,01d46e10d71cc3cea09d51c72713a201,Hydra,0,0,94047,0,2,0
 TT_Lucifer,0494f4378fee62e5b911311cb22ec892,Eventide,1812,76,16,2,101,
 Rapsnack,0dbf94992648f9a6f1ccf49fcc878f38,Slayer,324,20,1,20,160,
@@ -12,7 +12,7 @@ KindaOrnny,46b848f29d316daad219178538f153ae,Capture the Flag,1323,58,20,3,89,
 HiVE_HexecutoR,4a616747accffe489ef4da69a3e835d5,Eventide,2400,102,14,0,174,
 GeneralZod,4bdbbad9bf1fdce34343ec828e2640b0,Eventide,1487,26,8,5,99,
 INV_Mashiro,5ad65f36f6b5a6f0828b27f8af3fceeb,Eventide,1621,39,9,24,134,
-NubianNull,5ecde77f24005df2fd78f540b8be0da1,Eventide,3038,130,15,5,170,
+TT_Druid,5ecde77f24005df2fd78f540b8be0da1,Eventide,3038,130,15,5,170,
 TT_Druid,66ed0bdabf8d1ea9cdb6c120ed4b9e3e,Eventide,2804,58,7,58,197,
 Ruckus,84eb60ec04515602a33f88e0f3e1b8d0,Core Rush,2420,100,21,65,59,
 TT_Druid,9cfb635a01574c05317d5412d3281ce7,Eventide,1985,30,5,30,272,
