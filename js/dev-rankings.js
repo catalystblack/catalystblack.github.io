@@ -5,17 +5,20 @@ async function download(path) {
 }
 
 async function load(list, gamemode, statistic) {
-    try {
         if (gamemode.length < 4) {
             gamemode = gamemode.toUpperCase();
         }
         let path = gamemode + '/' + statistic + '.csv';
         let data = await download('./csv/' + path);
         let rows = data.split(/\r?\n/);
+        console.log(rows);
         console.log(rows.length);
-    } catch {
-        console.log(error);
-    }
+        if (rows.length > 101) {
+            rows = rows.slice(1,101);
+        } else {
+            rows = rows.shift();
+        }
+        console.log(rows);
 }
 
 const main = document.getElementById('target');
