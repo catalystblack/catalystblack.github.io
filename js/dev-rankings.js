@@ -15,6 +15,8 @@ async function load(list, gamemode, statistic) {
     for (let k in rows) {
         row = rows[k].split(',');
 
+
+
         let element_link = document.createElement('a');
         element_link.href = './img/post/' + row[1] + '.jpg';
         list.appendChild(element_link);
@@ -102,7 +104,7 @@ for (let i in gamemodes) {
 
         let list = document.createElement('ul');
         list.classList.add('stat-flexbox');
-        outer.appendChild(flexbox);
+        inner.appendChild(list);
 
         load(list, gamemode, statistic);
     }
