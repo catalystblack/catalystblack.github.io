@@ -14,7 +14,6 @@ async function load(list, gamemode, statistic) {
     rows = rows.slice(1, Math.min(rows.length - 1, 101));
     for (let k in rows) {
         row = rows[k].split(',');
-        k += 1;
 
         let element_link = document.createElement('a');
         element_link.href = './img/post/' + row[1] + '.jpg';
