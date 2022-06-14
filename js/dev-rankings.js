@@ -11,10 +11,33 @@ async function load(list, gamemode, statistic) {
     let path = gamemode + '/' + statistic + '.csv';
     let data = await download('./csv/' + path);
     let rows = data.split(/\r?\n/);
-    let n = Math.min(rows.length - 2, 100);
-    console.log(rows)
-    rows = rows.slice(1, n + 1);
-    console.log(rows);
+    rows = rows.slice(1, Math.min(rows.length - 1, 101));
+    for (let k in rows) {
+        row = rows[k].split(',');
+
+        let element_link = document.createElement('a');
+        element_link.href = './img/post/' + row[1] + '.jpg';
+        list.appendChild(element_link);
+
+        let element = document.createElement('li');
+        element.classList.add('rank-element');
+        element_link.appendChild(element);
+
+        let number = document.createElement('p');
+        number.classList.add('rank-number');
+        number.innerHTML = '#' + (k + 1);
+        element.appendChild(number);
+
+        let name = document.createElement('p');
+        name.classList.add('rank-name');
+        name.innerHTML = row[0];
+        element.appendChild(name);
+
+        let value = document.createElement('p');
+        value.classList.add('rank-value');
+        value.innerHTML = row[2];
+        element.appendChild(value);
+    }
 }
 
 const main = document.getElementById('target');

@@ -81,11 +81,8 @@ h1 {
     scroll-margin-top: 80px;
 }
 
-.gamemode-section h2 {
-    color: var(--light-cyan);
-}
-
 .gamemode-title {
+    color: var(--light-cyan);
     text-align: center;
 }
 
@@ -155,7 +152,7 @@ footer {
     }
 
     h1 {
-        margin: 16px 0;
+        margin: 24px 0;
     }
 
     .gamemode-section {
