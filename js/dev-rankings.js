@@ -27,7 +27,7 @@ async function load(list, gamemode, statistic) {
 
         let number = document.createElement('p');
         number.classList.add('rank-number');
-        number.innerHTML = '#';
+        number.innerHTML = '#' + k;
         element.appendChild(number);
 
         let name = document.createElement('p');
