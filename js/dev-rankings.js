@@ -16,7 +16,7 @@ async function load(list, gamemode, statistic) {
         if (rows.length > 101) {
             rows = rows.slice(1,101);
         } else {
-            rows = rows.shift();
+            rows.shift();
         }
         console.log(rows);
 }
