@@ -13,12 +13,12 @@ async function load(list, gamemode, statistic) {
     let rows = data.split(/\r?\n/);
     rows = rows.slice(1, Math.min(rows.length - 1, 101));
     for (let k in rows) {
+        k += 1;
         row = rows[k].split(',');
-
-
 
         let element_link = document.createElement('a');
         element_link.href = './img/post/' + row[1] + '.jpg';
+        element_link.target = '_blank';
         list.appendChild(element_link);
 
         let element = document.createElement('li');
@@ -27,7 +27,7 @@ async function load(list, gamemode, statistic) {
 
         let number = document.createElement('p');
         number.classList.add('rank-number');
-        number.innerHTML = '#' + (k + 1);
+        number.innerHTML = '#';
         element.appendChild(number);
 
         let name = document.createElement('p');

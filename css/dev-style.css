@@ -73,6 +73,15 @@ h1 {
     margin: 32px 0;
 }
 
+footer {
+    display: flex;
+    background: var(--burnt-sienna);
+    justify-content: center;
+    align-items: center;
+    min-height: 64px;
+    padding: 16px;
+}
+
 .gamemode-section {
     margin-bottom: 32px;
     border-radius: 32px;
@@ -103,17 +112,41 @@ h1 {
     scroll-margin-top: 80px;
 }
 
-.statistic-section h3 {
+.statistic-title {
     color: var(--gunmetal);
 }
 
-footer {
+.stat-flexbox {
+    max-height: 260px;
+    overflow: hidden scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.stat-flexbox::-webkit-scrollbar {
+  display: none;
+}
+
+
+.rank-element {
+    list-style-type: none;
     display: flex;
-    background: var(--burnt-sienna);
-    justify-content: center;
-    align-items: center;
-    min-height: 64px;
-    padding: 16px;
+    height: 24px;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+
+.rank-number,
+.rank-value {
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.rank-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 16px;
 }
 
 @media only screen and (min-width:592px) {
