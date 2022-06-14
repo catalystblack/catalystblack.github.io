@@ -13,7 +13,7 @@ async function load(list, gamemode, statistic) {
     let rows = data.split(/\r?\n/);
     let n = Math.min(rows.length - 2, 100);
     console.log(rows)
-    rows = rows.split(1, n + 1);
+    rows = rows.slice(1, n + 1);
     console.log(rows);
 }
 
