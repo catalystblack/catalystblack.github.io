@@ -117,7 +117,7 @@ footer {
 }
 
 .stat-flexbox {
-    max-height: 260px;
+    max-height: 240px;
     overflow: hidden scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -138,7 +138,8 @@ footer {
 }
 
 .rank-number,
-.rank-value {
+.rank-value,
+.rank-element:hover .rank-name {
     font-weight: 600;
     flex-shrink: 0;
 }
@@ -149,7 +150,7 @@ footer {
     padding: 0 16px;
 }
 
-@media only screen and (min-width:592px) {
+@media only screen and (min-width:512px) {
     nav {
         position: fixed;
         top: 0;
@@ -157,7 +158,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:591px) {
+@media only screen and (max-width:511px) {
     nav {
         flex-direction: column;
     }
