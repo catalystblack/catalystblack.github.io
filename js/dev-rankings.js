@@ -1,6 +1,21 @@
+async function download(path) {
+    let response = await fetch(path);
+    let text = await response.text();
+    return text;
+}
+
+async function load(list, gamemode, statistic) {
+    if (gamemode.length < 4) {
+        gamemode = gamemode.toUpperCase();
+    }
+    let path = gamemode + '/' + statistic + '.csv';
+    let data = await download('./csv/' + path);
+    console.log(data);
+}
+
 const main = document.getElementById('target');
-const games = ["Eventide", "Slayer", "Capture the Flag",
-    "Flag Hunters", "Core Rush", "Hydra", "Colosseum"]
+const games = ['Eventide', 'Slayer', 'Capture the Flag',
+    'Flag Hunters', 'Core Rush', 'Hydra', 'Colosseum']
 const gamemodes = ['eventide', 'slayer',
     'ctf', 'fh', 'cr', 'hydra', 'colosseum'];
 
@@ -61,5 +76,7 @@ for (let i in gamemodes) {
         let list = document.createElement('ul');
         list.classList.add('stat-flexbox');
         outer.appendChild(flexbox);
+
+        load(list, gamemode, statistic);
     }
 }
