@@ -3,16 +3,17 @@
     --dark-sky-blue: #98C1D9;
     --light-cyan: #E0FBFC;
     --fuzzy-wuzzy: #D16666;
-    --gunmetal: #293241;
+    --gunmetal: #293241
 }
 
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+
     user-select: none;
     margin: 0;
     padding: 0;
-    min-width: 0;
+    min-width: 0
 }
 
 nav {
@@ -20,25 +21,25 @@ nav {
     justify-content: space-between;
     background: var(--fuzzy-wuzzy);
     align-items: center;
-    padding: 16px 32px;
+    padding: 16px 32px
 }
 
 a,
 p {
     text-decoration: none;
     color: inherit;
-    font-family: inherit;
+    font-family: inherit
 }
 
 .logo {
     display: block;
     height: 32px;
     width: 32px;
-    margin: 0 16px;
+    margin: 0 16px
 }
 
 .navigation-list {
-    display: flex;
+    display: flex
 }
 
 .navigation-link {
@@ -46,50 +47,58 @@ p {
     font-size: 16px;
     font-weight: 700;
     color: var(--gunmetal);
-    font-family: Bai Jamjuree;
+    font-family: Bai Jamjuree
 }
 
 .navigation-link a {
     display: flex;
     align-items: center;
     height: 32px;
-    padding: 0 16px;
+    padding: 0 16px
 }
 
 .navigation-link p {
     line-height: 32px;
-    padding: 0 16px;
+    padding: 0 16px
 }
 
 main {
     min-height: calc(100vh - 160px);
     padding: 0 48px;
-    margin-top: 96px;
+    margin-top: 96px
 }
 
 h1 {
     text-align: center;
     font-style: italic;
     color: var(--gunmetal);
-    margin: 32px 0;
+    margin: 32px 0
 }
 
-.discord-link-button {
+.discord-link-button,
+.privacy-link-button {
     margin: auto;
     text-align: center;
-    margin: 48px 0;
+    margin: 48px 0
 }
 
-.discord-link {
+.discord-link,
+.privacy-link {
     font-family: Bai Jamjuree;
-    font-weight: bold;
+    font-weight: 700;
     background: var(--fuzzy-wuzzy);
     padding: 16px;
-    border-radius: 16px;
+    border-radius: 16px
 }
 
-.discord-link:hover {
-    background: var(--dark-sky-blue);
+.discord-link:hover,
+.privacy-link:hover {
+    background: var(--dark-sky-blue)
+}
+
+.spacer {
+    height: 0;
+    margin-bottom: -32px;
 }
 
 footer {
@@ -98,7 +107,7 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 64px;
-    padding: 16px;
+    padding: 16px
 }
 
 .gamemode-section {
@@ -106,19 +115,19 @@ footer {
     border-radius: 32px;
     background: var(--bdazzled-blue);
     padding: 16px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 80px
 }
 
 .gamemode-title {
     color: var(--light-cyan);
-    text-align: center;
+    text-align: center
 }
 
 .gamemode-flexbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 -16px;
+    margin: 0 -16px
 }
 
 .statistic-section {
@@ -128,24 +137,22 @@ footer {
     width: 384px;
     margin: 16px 16px 0;
     padding: 16px;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 80px
 }
 
 .statistic-title {
-    color: var(--gunmetal);
+    color: var(--gunmetal)
 }
 
 .stat-flexbox {
     max-height: 240px;
     overflow: hidden scroll;
     scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
 .stat-flexbox::-webkit-scrollbar {
-    display: none;
+    display: none
 }
-
 
 .rank-element {
     list-style-type: none;
@@ -153,71 +160,101 @@ footer {
     height: 24px;
     align-items: flex-end;
     justify-content: space-between;
-    font-family: Bai Jamjuree;
+    font-family: Bai Jamjuree
 }
 
 .rank-number,
 .rank-value,
 .rank-element:hover .rank-name {
     font-weight: 600;
-    flex-shrink: 0;
+    flex-shrink: 0
 }
 
 .rank-name {
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 0 16px
+}
+
+.default {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 32px auto;
     padding: 0 16px;
+    width: min(max(378px, 50%), 100%);
+}
+
+.default a {
+    color: var(--fuzzy-wuzzy);
+}
+
+.default a:hover {
+    color: var(--dark-sky-blue);
 }
 
 @media only screen and (min-width:768px) {
     nav {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100%
     }
+
 }
 
 @media only screen and (max-width:767px) {
     nav {
-        flex-direction: column;
+        flex-direction: column
     }
 
     .navigation-list {
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     .navigation-list p {
-        line-height: normal;
+        line-height: normal
     }
 
     nav .navigation-link a {
-        align-items: flex-end;
+        align-items: flex-end
     }
 
     footer .navigation-link a {
-        align-items: flex-start;
+        align-items: flex-start
     }
 
     main {
+        min-height: calc(100vh - 300px);
         margin: 0;
-        padding: 0 16px;
+        padding: 0 16px
     }
 
     h1 {
-        margin: 24px 0;
+        margin: 24px 0
     }
 
     .discord-link-button {
-        margin: 40px 0 32px 0;
+        margin: 40px 0 32px 0
+    }
+
+    .privacy-link-button {
+        margin: 32px 0;
+    }
+
+    .spacer {
+        margin-bottom: -16px;
     }
 
     .gamemode-section {
         margin-bottom: 16px;
-        scroll-margin-top: 16px;
+        scroll-margin-top: 16px
     }
 
     .statistic-section {
-        scroll-margin-top: 16px;
+        scroll-margin-top: 16px
+    }
+
+    .default {
+        margin-bottom: 16px;
     }
 }
