@@ -12,13 +12,16 @@ async function load(list, gamemode, statistic) {
     let data = await download('./csv/' + path);
     let rows = data.split(/\r?\n/);
     rows = rows.slice(1, Math.min(rows.length - 1, 101));
+
+    if (gamemode == 'hydra' && statistic == 'assists') {
+        console.log(path);
+        console.log(data);
+        console.log(rows);
+    }
+
     for (let k in rows) {
         row = rows[k].split(',');
         k = parseInt(k) + 1;
-
-        if (gamemode == 'hydra' && statistic == 'assists') {
-            console.log(rows);
-        }
 
         nameHTML = row[0].replace(
             'GG_', '<span style=\'color:#A74482\'>GG_</span>'
