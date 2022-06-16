@@ -2,7 +2,7 @@ raw <- read.csv("./csv/data.csv")
 
 # hydra
 data <- raw[raw$game == "Hydra", ]
-statistics <- list("cr", "pk", "dtb", "kills", "assits", "dtp")
+statistics <- list("cr", "pk", "dtb", "kills", "assists", "dtp")
 for (inner in 1:6) {
     data <- data[order(-data[, 3 + inner], data$hash), ]
     write.csv(head(data[!duplicated(data$name), c(1, 2, 3 + inner)], 100),
