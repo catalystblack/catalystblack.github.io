@@ -16,6 +16,10 @@ async function load(list, gamemode, statistic) {
         row = rows[k].split(',');
         k = parseInt(k) + 1;
 
+        if (gamemode == 'hydra' && statistic == 'assists') {
+            console.log(rows);
+        }
+
         nameHTML = row[0].replace(
             'GG_', '<span style=\'color:#A74482\'>GG_</span>'
         ).replace(
