@@ -60,10 +60,10 @@ gtag('js', new Date());
 gtag('config', 'G-4YJMQ5MS8R');
 
 const main = document.getElementById('target');
-const games = ['Eventide', 'Slayer', 'Capture the Flag',
+const games = ['Eventide', 'Hydra', 'Slayer', 'Capture the Flag',
     'Flag Hunters', 'Core Rush', 'Hydra', 'Colosseum']
-const gamemodes = ['eventide', 'slayer',
-    'ctf', 'fh', 'cr', 'hydra', 'colosseum'];
+const gamemodes = ['eventide', 'hydra', 'slayer',
+    'ctf', 'fh', 'cr', 'colosseum'];
 
 for (let i in gamemodes) {
     let gamemode = gamemodes[i];
