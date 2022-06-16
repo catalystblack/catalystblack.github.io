@@ -16,6 +16,18 @@ async function load(list, gamemode, statistic) {
         row = rows[k].split(',');
         k = parseInt(k) + 1;
 
+        nameHTML = row[0].replace(
+            'GG_', '<span style=\'color:#A74482\'>GG_</span>'
+        ).replace(
+            'HiVE_', '<span style=\'color:#FADF63\'>HiVE_</span>'
+        ).replace(
+            'INV_', '<span style=\'color:#E03616\'>INV_</span>'
+        ).replace(
+            'SP_', '<span style=\'color:#000000\'>SP_</span>'
+        ).replace(
+            'TT_', '<span style=\'color:#1A936F\'>TT_</span>'
+        );
+
         let element_link = document.createElement('a');
         element_link.href = './img/post/' + row[1] + '.jpg';
         element_link.target = '_blank';
@@ -32,7 +44,7 @@ async function load(list, gamemode, statistic) {
 
         let name = document.createElement('p');
         name.classList.add('rank-name');
-        name.innerHTML = row[0];
+        name.innerHTML = nameHTML;
         element.appendChild(name);
 
         let value = document.createElement('p');
