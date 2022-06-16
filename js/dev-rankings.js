@@ -61,7 +61,7 @@ gtag('config', 'G-4YJMQ5MS8R');
 
 const main = document.getElementById('target');
 const games = ['Eventide', 'Hydra', 'Slayer', 'Capture the Flag',
-    'Flag Hunters', 'Core Rush', 'Hydra', 'Colosseum']
+    'Flag Hunters', 'Core Rush', 'Colosseum']
 const gamemodes = ['eventide', 'hydra', 'slayer',
     'ctf', 'fh', 'cr', 'colosseum'];
 
