@@ -23,6 +23,8 @@ async function load(list, gamemode, statistic) {
         ).replace(
             'INV_', '<span style=\'color:#E03616\'>INV_</span>'
         ).replace(
+            'PHX_', '<span style=\'color:#C1292E\'>PHX_</span>'
+        ).replace(
             'SP_', '<span style=\'color:#000000\'>SP_</span>'
         ).replace(
             'TT_', '<span style=\'color:#1A936F\'>TT_</span>'
