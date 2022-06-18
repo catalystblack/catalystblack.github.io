@@ -9,7 +9,6 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
-
     user-select: none;
     margin: 0;
     padding: 0;
@@ -94,11 +93,6 @@ h1 {
     background: var(--dark-sky-blue);
 }
 
-.spacer {
-    height: 0;
-    margin-bottom: -32px;
-}
-
 footer {
     display: flex;
     background: var(--fuzzy-wuzzy);
@@ -162,8 +156,7 @@ footer {
 }
 
 .rank-number,
-.rank-value,
-.rank-element:hover .rank-name {
+.rank-value {
     font-weight: 600;
     flex-shrink: 0;
 }
@@ -240,8 +233,8 @@ span {
         margin: 40px 0 32px 0;
     }
 
-    .spacer {
-        margin-bottom: -16px;
+    .rank-element:hover .rank-name {
+        font-weight: 600;
     }
 
     .gamemode-section {
