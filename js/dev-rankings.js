@@ -56,11 +56,6 @@ async function load(list, gamemode, statistic) {
     }
 }
 
-window.dataLayer = window.dataLayer || [];
-function gtag() { dataLayer.push(arguments); }
-gtag('js', new Date());
-gtag('config', 'G-4YJMQ5MS8R');
-
 const main = document.getElementById('target');
 const games = ['Eventide', 'Hydra', 'Slayer', 'Capture the Flag',
     'Flag Hunters', 'Core Rush', 'Colosseum']
