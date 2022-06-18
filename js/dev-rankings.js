@@ -31,6 +31,7 @@ async function load(list, gamemode, statistic) {
         );
 
         let element_link = document.createElement('a');
+        console.log(Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
         element_link.href = './img/post/' + row[1] + '.jpg';
         element_link.target = '_blank';
         list.appendChild(element_link);
