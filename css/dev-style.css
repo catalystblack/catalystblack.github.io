@@ -194,6 +194,9 @@ span {
         width: 100%;
     }
 
+    .rank-element:hover .rank-name {
+        font-weight: 600;
+    }
 }
 
 @media only screen and (max-width:767px) {
@@ -231,10 +234,6 @@ span {
 
     .discord-link-button {
         margin: 40px 0 32px 0;
-    }
-
-    .rank-element:hover .rank-name {
-        font-weight: 600;
     }
 
     .gamemode-section {
