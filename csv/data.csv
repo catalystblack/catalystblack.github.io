@@ -2,6 +2,7 @@ name,hash,game,a,b,c,d,e,f
 TT_Lucifer,00b7ebf1782a67ecf795fb5904860b37,Eventide,748,14,5.0,0.0,76.0,
 HiVE_CrazyLordz,00d3f5506963d919a5040f7bd63e3a5b,Eventide,1182,16,13.0,2.0,118.0,
 Drei,01d46e10d71cc3cea09d51c72713a201,Hydra,0,0,94047.0,0.0,2.0,0.0
+PHX_Aldebaran,025e1ecd168aecd03ffd0276e31e504d,Slayer,351,16,7.0,15.0,137.0,
 TT_Toast,02c330a9408576daf8f58cd414c32c09,Eventide,1034,6,6.0,5.0,130.0,
 TT_H2O,0474b1a6aa1834a2834f54119f3ef595,Eventide,950,18,9.0,1.0,95.0,
 TT_Lucifer,0494f4378fee62e5b911311cb22ec892,Eventide,1812,76,16.0,2.0,101.0,
@@ -40,9 +41,11 @@ INV_Flutter,2da9737e58f6cbc82f4e5d79b34f178d,Eventide,1332,34,8.0,34.0,150.0,
 GG_NKL,2fb71db975032e68011b91dc5f5dbd71,Flag Hunters,385,13,9.0,9.0,141.0,
 GG_CyphyLite,313ede665c0f0c46afabe12a5f7bae46,Slayer,353,24,0.0,24.0,179.0,
 INV_Wine,31f3d38d6360fbb06daf772087d3aa06,Eventide,1691,37,9.0,0.0,142.0,
+PHX_Aldebaran,332cfa9a9de3f5f0d64d611a6e8b0e2e,Hydra,5,8,0.0,19.0,7.0,97085.0
 TT_Lucifer,34a6d6908dfcfc2432062aeb75310330,Colosseum,378940,67,,,,
 PHX_Aldebaran,363625601febb2afa748ecb3b2078f9b,Colosseum,295074,23,,,,
 qurasupertrash,374a961e70996bc5f989c1a673e1be77,Eventide,1014,42,10.0,0.0,63.0,
+PHX_Aldebaran,37a4b2df1bcd07b62005d899061c08e3,Slayer,257,15,8.0,4.0,124.0,
 TT_killerrap,3968305864411f18ccd704400c9ca814,Core Rush,1230,50,31.0,50.0,105.0,
 TT_Druid,3a2d039e352d301bf447fb3bfef60f8e,Eventide,1447,47,19.0,1.0,97.0,
 TT_Lucifer,3b2d704d15a0c8cc747178745c43c75a,Hydra,0,9,0.0,15.0,8.0,75474.0
@@ -85,6 +88,7 @@ GG_CyphyLite,6f5bd4b70485727573d392ab76641715,Eventide,2283,39,8.0,9.0,204.0,
 INV_Mashiro,71b90f666a257a917ca560d878880bab,Eventide,824,25,28.0,7.0,52.0,
 SLOWREMOTEWORK,72debcdc570b6b01cae1bbb4a191f418,Eventide,753,24,17.0,10.0,72.0,
 PHX_Summer,764d5b4f02150f2c8ca6388569f4d239,Eventide,939,24,3.0,0.0,88.0,
+TT_killerrap,77e4119db026276ad801fee449ec65c0,Slayer,395,21,4.0,21.0,216.0,
 NeuerSpielername,790dbd6c604853e62f19f09e10bb5594,Flag Hunters,315,6,18.0,0.0,118.0,
 PHX_Aldebaran,7c2b3828ff2bebadee9b2b0b5f4c3371,Colosseum,347938,44,,,,
 Kinta,808a5a0c910ddf9058d6bc2f3b3f7028,Hydra,14,4,0.0,12.0,7.0,88456.0
